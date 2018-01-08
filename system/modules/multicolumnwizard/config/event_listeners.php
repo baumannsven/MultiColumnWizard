@@ -11,11 +11,10 @@
  */
 
 use ContaoCommunityAlliance\DcGeneral\Contao\View\Contao2BackendView\Event\BuildWidgetEvent;
-use ContaoCommunityAlliance\DcGeneral\DcGeneralEvents;
 use ContaoCommunityAlliance\DcGeneral\Factory\Event\PopulateEnvironmentEvent;
 use MultiColumnWizard\DcGeneral\UpdateDataDefinition;
 
-if (class_exists(DcGeneralEvents::class)) {
+if (class_exists('ContaoCommunityAlliance\DcGeneral\DcGeneralEvents')) {
     return array
     (
         PopulateEnvironmentEvent::NAME => array(
